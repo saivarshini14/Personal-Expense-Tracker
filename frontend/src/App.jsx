@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-const API = 'http://localhost:8080/api/expenses'
+const API = 'https://personal-expense-tracker-backend-ra4p.onrender.com/api/expenses'
 
 function App() {
   const [expenses, setExpenses] = useState([])
