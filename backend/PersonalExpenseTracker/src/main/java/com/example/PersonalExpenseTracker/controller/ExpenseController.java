@@ -10,7 +10,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/expenses")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://personal-expense-tracker-frontend-xm1p.onrender.com"
+})
 public class ExpenseController {
 
     private final ExpenseService service;
